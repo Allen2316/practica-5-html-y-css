@@ -51,25 +51,27 @@
 
                 <div class="input-contenedor">
                     <i class="fa fa-user icon"></i>
-                    <input type="text" placeholder="Login/Usuario" minlength="4" maxlength="20" required
-                        title="Solo Ingrese letras mayusculas O minusculas y numeros(No puede iniciar con un numero)">
+                    <input type="text" placeholder="Login/Usuario" required minlength="4" maxlength="20"  pattern="[a-zA-Z]+[a-zA-Z0-9]+"
+                        title="Permitido A-Z  a-z  0-9 (No puede iniciar con un numero, caracteres min: 4 max: 20)" autofocus="1">
                 </div>
                 <div class="input-contenedor">
                     <i class="fa fa-key icon"></i>
-                    <input type="password" placeholder="Contraseña">
+                    <input type="password" placeholder="Contraseña" required minlength="6" maxlength="20" pattern="[a-zA-Z0-9_-]+"
+                    title="Permitido A-Z a-z 0-9 _ - ningun otro caracter o espacio es valido">
                 </div>
                 <div class="input-contenedor">
                     <i class="fa fa-key icon"></i>
-                    <input type="password" placeholder="Repita Contraseña">
+                    <input type="password" placeholder="Repita Contraseña"  required minlength="6" maxlength="20" pattern="[a-zA-Z0-9_-]+"
+                    title="Permitido A-Z a-z 0-9 _ - ningun otro caracter o espacio es valido">
                 </div>
                 <div class="input-contenedor">
                     <i class="fa fa-male icon"></i>
-                    <input type="text" placeholder="Nombres Completos">
+                    <input type="text" placeholder="Nombres Completos" required>
                 </div>
 
                 <div class="input-contenedor">
                     <i class="fa fa-envelope icon"></i>
-                    <input id="email" type="email" placeholder="E-mail">
+                    <input id="email" type="email" placeholder="E-mail" required>
                 </div>
 
                 <input type="submit" value="Registrate" class="button">
