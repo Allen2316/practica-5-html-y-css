@@ -9,6 +9,11 @@ main {
     min-height: 100vh;
 }
 
+.autor{
+    float: right;;
+    outline: 2px solid red;
+}
+
 .slider {
     width: 60%;
     height: 400px;    
@@ -71,27 +76,29 @@ main {
     }
 }
 
-/*
 
-#sbutton1:checked  ~ label:nth-child(2),
-#sbutton2:checked  ~ label:nth-child(3),
-#sbutton3:checked  ~ label:nth-child(4),
-#sbutton4:checked  ~ label:nth-child(5),
-#sbutton5:checked  ~ label:nth-child(6),
-#sbutton6:checked  ~ label:nth-child(7),
-#sbutton7:checked  ~ label:nth-child(8),
-#sbutton8:checked  ~ label:nth-child(9),
-#sbutton9:checked  ~ label:nth-child(10),
-#sbutton10:checked ~ label:nth-child(11),
-#sbutton11:checked ~ label:nth-child(12),
-#sbutton12:checked ~ label:nth-child(13),
-#sbutton13:checked ~ label:nth-child(14),
-#sbutton14:checked ~ label:nth-child(15),
-#sbutton15:checked ~ label:nth-child(1){
+
+
+/* 
+#sbutton1:checked  ~  label:nth-child(2),
+#sbutton2:checked  ~  label:nth-child(3),
+#sbutton3:checked  ~  label:nth-child(4),
+#sbutton4:checked  ~  label:nth-child(5),
+#sbutton5:checked  ~  label:nth-child(6),
+#sbutton6:checked  ~  label:nth-child(7),
+#sbutton7:checked  ~  label:nth-child(8),
+#sbutton8:checked  ~  label:nth-child(9),
+#sbutton9:checked  ~  label:nth-child(10),
+#sbutton10:checked ~  label:nth-child(11),
+#sbutton11:checked ~  label:nth-child(12),
+#sbutton12:checked ~  label:nth-child(13),
+#sbutton13:checked ~  label:nth-child(14),
+#sbutton14:checked ~  label:nth-child(15),
+#sbutton15:checked ~  label:nth-child(1){
     background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
     float:right;
-    margin: 0 -50px 0 0;
-    display: block;
+   margin: 0 -50px 0 0;
+   display: block;
     outline: 5px solid red;
  }
  
@@ -111,12 +118,13 @@ main {
  #slide3:checked ~ label:nth-child(2),
  #slide2:checked ~ controls label:nth-child(1){
     background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-    float:left;
-    margin: 0 0 0 -50px;
+    float:left;    
+    margin: 50px;
     display: block;
+    outline: 5px solid green;
  }
 
- 
+
  @media screen and (max-width: 900px) {
    #slide1:checked ~ #controls label:nth-child(2),
  #slide2:checked ~ #controls label:nth-child(3),

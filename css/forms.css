@@ -73,8 +73,7 @@ textarea:hover {
 
 .imagen {
     border: none;
-    height: 300px;
-    outline: 2px solid green;
+    height: 300px;    
 }
 
 .imagen:hover {
@@ -96,7 +95,7 @@ textarea:hover {
 }
 
 .botones input {
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 .botones:hover {
