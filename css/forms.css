@@ -13,6 +13,8 @@ body {
     background-attachment: fixed;
 }
 
+/* formulario */
+
 .contenedor {
     width: 100%;
     padding: 15px;
@@ -20,6 +22,13 @@ body {
 }
 
 .formulario {
+    background: #fff;
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.formulario-img {
+    width: 60%;
     background: #fff;
     padding: 3px;
     margin: 0 auto;
@@ -42,21 +51,85 @@ input[type="text"], input[type="password"], input[type="email"] {
     background: #ccffcc;
 }
 
-.input-contenedor:hover {
-        
-    background: #ccffcc;
-    input 
-}
-
 .input-contenedor {
     margin-bottom: 15px;
     border: 1px solid #aaa;
 }
 
+/* text area */
+
+textarea {
+    resize: none;
+    width: 99%;
+    height: 100;
+    border: 0;
+}
+
+textarea:hover {
+    background: #ccffcc;
+}
+
+/* cargar imagen */
+
+.imagen {
+    border: none;
+    height: 300px;
+    outline: 2px solid green;
+}
+
+.imagen:hover {
+    background: none;
+}
+
+.imagen img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.botones {
+    border: 0;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.botones input {
+    cursor: pointer;
+}
+
+.botones:hover {
+    background: none;
+}
+
+/* iconos */
+
 .icon {
     min-width: 50px;
     text-align: center;
     color: #999;
+}
+
+/* Botones */
+
+.formulario-img .button {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.imagen input {
+    visibility: hidden;
+}
+
+.imagen label {
+    cursor: pointer;
 }
 
 .button {
@@ -70,9 +143,17 @@ input[type="text"], input[type="password"], input[type="email"] {
     cursor: pointer;
 }
 
+/* hovers */
+
 .button:hover {
     background: cadetblue;
 }
+
+.link:hover {
+    color: cadetblue;
+}
+
+/* mejoras est */
 
 p {
     text-align: center;
@@ -84,9 +165,7 @@ p {
     font-weight: 600;
 }
 
-.link:hover {
-    color: cadetblue;
-}
+/* medidas responsive */
 
 @media(min-width:768px) {
     .formulario {
