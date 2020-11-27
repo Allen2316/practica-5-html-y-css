@@ -1,0 +1,158 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    align-content: center;
+    display: flex;
+    min-height: 100vh;
+}
+
+.slider {
+    width: 60%;
+    height: 400px;    
+    margin:0 auto;
+    position: relative;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 20px 0 60px rgba(0, 0, 0, 0.987);   
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    opacity: 0;    
+}
+
+.slider input[type="radio"] {
+    display: none;
+}
+
+.slider input[type="radio"]:checked~img {
+    opacity: 1;
+}
+
+.slider input[type="radio"]+label {
+    position: relative;
+    z-index: 50;
+    margin:10px;
+    display: block;    
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    border-radius: 20%;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+}
+
+.slider input[type="radio"]:checked + label {    
+    background: #000000;
+    border: 2px solid #ffffff;
+}
+
+@media only screen and (max-width: 626px) {
+    .slider input[type="radio"]+label {         
+        width: 50%;
+        height: 20px;        
+        transition: all 1s;
+    }
+    .slider {
+        width: 100%;
+        height: 400px;    
+         
+    }
+}
+
+/*
+
+#sbutton1:checked  ~ label:nth-child(2),
+#sbutton2:checked  ~ label:nth-child(3),
+#sbutton3:checked  ~ label:nth-child(4),
+#sbutton4:checked  ~ label:nth-child(5),
+#sbutton5:checked  ~ label:nth-child(6),
+#sbutton6:checked  ~ label:nth-child(7),
+#sbutton7:checked  ~ label:nth-child(8),
+#sbutton8:checked  ~ label:nth-child(9),
+#sbutton9:checked  ~ label:nth-child(10),
+#sbutton10:checked ~ label:nth-child(11),
+#sbutton11:checked ~ label:nth-child(12),
+#sbutton12:checked ~ label:nth-child(13),
+#sbutton13:checked ~ label:nth-child(14),
+#sbutton14:checked ~ label:nth-child(15),
+#sbutton15:checked ~ label:nth-child(1){
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+    outline: 5px solid red;
+ }
+ 
+ #slide1:checked ~ label:nth-child(15),
+ #slide15:checked ~ label:nth-child(14),
+ #slide14:checked ~ label:nth-child(13),
+ #slide13:checked ~ label:nth-child(12),
+ #slide12:checked ~ label:nth-child(11),
+ #slide11:checked ~ label:nth-child(10),
+ #slide10:checked ~ label:nth-child(9),
+ #slide9:checked ~ label:nth-child(8),
+ #slide8:checked ~ label:nth-child(7),
+ #slide7:checked ~ label:nth-child(6),
+ #slide6:checked ~ label:nth-child(5),
+ #slide5:checked ~ label:nth-child(4),
+ #slide4:checked ~ label:nth-child(3),
+ #slide3:checked ~ label:nth-child(2),
+ #slide2:checked ~ controls label:nth-child(1){
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+
+ 
+ @media screen and (max-width: 900px) {
+   #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(5),
+ #slide5:checked ~ #controls label:nth-child(6),
+ #slide6:checked ~ #controls label:nth-child(7),
+ #slide7:checked ~ #controls label:nth-child(8),
+ #slide8:checked ~ #controls label:nth-child(9),
+ #slide9:checked ~ #controls label:nth-child(10),
+ #slide10:checked ~ #controls label:nth-child(11),
+ #slide11:checked ~ #controls label:nth-child(12),
+ #slide12:checked ~ #controls label:nth-child(13),
+ #slide13:checked ~ #controls label:nth-child(14),
+ #slide14:checked ~ #controls label:nth-child(15),
+ #slide15:checked ~ #controls label:nth-child(1),
+ #slide1:checked ~ #controls label:nth-child(15),
+ #slide15:checked ~ #controls label:nth-child(14),
+ #slide14:checked ~ #controls label:nth-child(13),
+ #slide13:checked ~ #controls label:nth-child(12),
+ #slide12:checked ~ #controls label:nth-child(11),
+ #slide11:checked ~ #controls label:nth-child(10),
+ #slide10:checked ~ #controls label:nth-child(9),
+ #slide9:checked ~ #controls label:nth-child(8),
+ #slide8:checked ~ #controls label:nth-child(7),
+ #slide7:checked ~ #controls label:nth-child(6),
+ #slide6:checked ~ #controls label:nth-child(5),
+ #slide5:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(1){
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+       
+    }
+ } */

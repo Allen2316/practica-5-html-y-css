@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    padding: 20px;
+}
+
+.imagen {
+    width: 250px;
+    margin-left: 30px;
+    padding: 0%;
+    float: left;  
+    margin: 20px 100px 30px 30px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 10px 3px 6px rgba(0, 100, 100, .25);    
+    transform: rotate(3deg);
+    border-radius: 5px;
+}
+
+.imagen:hover {
+    transform: scale(1.25);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    position: relative;
+    border-radius: 5px;
+}
+
+.datos li {
+    font-weight: bold;
+}
+
+.datos li p {
+    font-weight: normal;
+}
+
+.parrafo p {
+    text-align: justify;
+}
+
+#nick{
+    text-align: justify;
+    font-weight: bold;
+}

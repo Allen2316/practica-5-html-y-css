@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Registro</title>
+    <meta name="description" content="Practica HTML y CSS">
+    <meta name="author" content="Luis Alberto Sarmiento Cuenca">
+    <meta name="keywords" content="HTML,CSS,Forms">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <a name="arriba"></a>
+    <header>
+        <div>
+            <p></p><img src="imagenes/logoR.jpg" /></p>
+            <h4>Tu sitio de Imagenes</h4>
+        </div>
+        <div class="cont-titulo">
+            <h1 class="titulo">ALLEN'S SITE IMAGES</h1>
+            <p class="desc">Sitio donde podras subir y calificar imagenes a tu gusto</p>
+        </div>
+    </header>
+
+    <div class="header-menu">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</i></a></li>
+                <li><a href="./buscar.html"><i class="fa fa-search" aria-hidden="true"></i> Buscar</a></li>
+                <li><a href="./nuevo.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nueva Foto</a></li>
+                <li><a href="./favoritos.html"><i class="fa fa-heart" aria-hidden="true"></i> Favoritas</a></li>
+                <li><a href="./logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+                <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <form class="formulario">
+
+            <h1>Registro</h1>
+            <div class="contenedor">
+
+                <div class="input-contenedor">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Login/Usuario" minlength="4" maxlength="20" required
+                        
+                        title="Solo Ingrese letras mayusculas O minusculas y numeros(No puede iniciar con un numero)">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" placeholder="Repita Contraseña">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fa fa-male icon"></i>
+                    <input type="text" placeholder="Nombres Completos">
+                </div>
+
+                <div class="input-contenedor">
+                    <i class="fa fa-envelope icon"></i>
+                    <input id="email" type="email" placeholder="E-mail">
+                </div>
+
+                <input type="submit" value="Registrate" class="button">
+                <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+                <p>¿Ya tienes una cuenta?<a class="link" href="./login.html"> Iniciar Sesion</a></p>
+            </div>
+        </form>
+    </main>
+
+    <section class="paginacion">
+        <ul>
+            <li><a href="./index.html">1</a></li>
+            <li><a href="./buscar.html">2</a></li>
+            <li><a href="./nuevo.html">3</a></li>
+            <li><a href="./favoritos.html">4</a></li>
+            <li><a href="./logout.html">5</a></li>
+            <li><a href="./login.html">6</a></li>
+            <li><a href="#" class="active">7</a></li>
+            <li><a href="./acerca.html">8</a></li>
+        </ul>
+    </section>
+
+    <a class='flotante' href="#arriba"> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col">
+                <h1>Contactos</h1>
+                <ul>
+                    <li><a href="#"><i class="fa fa-child" aria-hidden="true"></i> Acerca de Nosotros</a></li>
+                    <li><a href="https://www.facebook.com/luis.sarmiento.330"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i> Facebook</a></li>
+                    <li><a href="https://www.youtube.com/c/ALLEN23"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i> YouTube</a></li>
+                    <li><a href="https://www.instagram.com/allen23yt"><i class="fa fa-instagram" aria-hidden="true"></i>
+                            Intagram</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Direccion</h1>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Plateado, Loja-Ecuador</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i> +593-989 023 836</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> luis.a.sarmiento@unl.edu.ec</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>derechos</h1>
+                <ul>
+                    <li><i class="fa fa-copyright" aria-hidden="true"></i> Copyrigth: Todos los derechos reservados</li>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i> Creacion: <time datetime="2020-11-024">24 de
+                            noviembre de 2020</time></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
