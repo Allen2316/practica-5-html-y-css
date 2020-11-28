@@ -56,6 +56,7 @@ input[type="text"], input[type="password"], input[type="email"] {
     border: 1px solid #aaa;
 }
 
+
 /* text area */
 
 textarea {
@@ -73,7 +74,7 @@ textarea:hover {
 
 .imagen {
     border: none;
-    height: 300px;    
+    height: 300px;
 }
 
 .imagen:hover {
@@ -95,7 +96,7 @@ textarea:hover {
 }
 
 .botones input {
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .botones:hover {

@@ -1,149 +1,188 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/iiasdasd.css">
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <meta name="description" content="Practica HTML y CSS">
+    <meta name="author" content="Luis Alberto Sarmiento Cuenca">
+    <meta name="keywords" content="HTML,CSS,Forms">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/pruebaimagenes.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <main>
-        <div id="slider">
-            <input type="radio" name="slider" id="slide1" checked>
-            <input type="radio" name="slider" id="slide2">
-            <input type="radio" name="slider" id="slide3">
-            <input type="radio" name="slider" id="slide4">
-            <input type="radio" name="slider" id="slide5">
-            <input type="radio" name="slider" id="slide6">
-            <input type="radio" name="slider" id="slide7">
-            <input type="radio" name="slider" id="slide8">
-            <input type="radio" name="slider" id="slide9">
-            <input type="radio" name="slider" id="slide10">
-            <input type="radio" name="slider" id="slide11">
-            <input type="radio" name="slider" id="slide12">
-            <input type="radio" name="slider" id="slide13">
-            <input type="radio" name="slider" id="slide14">
-            <input type="radio" name="slider" id="slide15">
-            <div id="slides">
-                <div id="overflow">
-                    <div class="inner">
-                        <div class="slide slide_1">
-                            <div class="slide-content">
-                                <p><img src="imagenes/01.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_2">
-                            <div class="slide-content">
-                                <p> <img src="imagenes/02.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_3">
-                            <div class="slide-content">
-                                <p><img src="imagenes/03.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_4">
-                            <div class="slide-content">
-                                <p> <img src="imagenes/04.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_5">
-                            <div class="slide-content">
-                                <p><img src="imagenes/05.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_6">
-                            <div class="slide-content">
-                                <p><img src="imagenes/06.jpg"></p>
+    <a name="arriba"></a>
+    <header>
+        <div>
+            <p></p><img src="imagenes/logoR.jpg" /></p>
+            <h4>Tu sitio de Imagenes</h4>
+        </div>
+        <div class="cont-titulo">
+            <h1 class="titulo">ALLEN'S SITE IMAGES</h1>
+            <p class="desc">Sitio donde podras subir y calificar imagenes a tu gusto</p>
+        </div>
+    </header>
 
-                            </div>
-                        </div>
-                        <div class="slide slide_7">
-                            <div class="slide-content">
-                                <p> <img src="imagenes/07.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_8">
-                            <div class="slide-content">
-                                <p><img src="imagenes/08.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_9">
-                            <div class="slide-content">
-                                <p> <img src="imagenes/09.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_10">
-                            <div class="slide-content">
-                                <p><img src="imagenes/10.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_11">
-                            <div class="slide-content">
-                                <p><img src="imagenes/11.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_12">
-                            <div class="slide-content">
-                                <p><img src="imagenes/12.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_13">
-                            <div class="slide-content">
-                                <p><img src="imagenes/13.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_14">
-                            <div class="slide-content">
-                                <p><img src="imagenes/14.jpg"></p>
-                            </div>
-                        </div>
-                        <div class="slide slide_15">
-                            <div class="slide-content">
-                                <p> <img src="imagenes/15.jpg"></p>
-                            </div>
-                        </div>
+    <div class="header-menu">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="./buscar.html"><i class="fa fa-search" aria-hidden="true"></i> Buscar</a></li>
+                <li><a href="./nueva.html"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Nueva Foto</a></li>
+                <li><a href="./favoritas.html"><i class="fa fa-heart" aria-hidden="true"></i> Favoritas</a></li>
+                <li><a href="./logout.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>
+                <li><a href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+                <li><a href="./registro.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Registro</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Bienvenido</h1>
+    <main>
+        <div class="contenedor-p">
+            <div class="cabeza">
+                <h3>Soldados, aviones y tanques</h3>
+                <p>By Luis Sarmiento</p>
+            </div>
+            
+            <div class="slidershow middle">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <div class="slide s1">
+                        <img src="imagenes/01.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/02.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/03.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="imagenes/04.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <a href=""><img src="imagenes/05.jpg" alt=""></a>
                     </div>
                 </div>
-            </div>
-            <div id="controls">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-                <label for="slide6"></label>
-                <label for="slide7"></label>
-                <label for="slide8"></label>
-                <label for="slide9"></label>
-                <label for="slide10"></label>
-                <label for="slide11"></label>
-                <label for="slide12"></label>
-                <label for="slide13"></label>
-                <label for="slide14"></label>
-                <label for="slide15"></label>
-            </div>
-            <div id="bullets">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-                <label for="slide5"></label>
-                <label for="slide6"></label>
-                <label for="slide7"></label>
-                <label for="slide8"></label>
-                <label for="slide9"></label>
-                <label for="slide10"></label>
-                <label for="slide11"></label>
-                <label for="slide12"></label>
-                <label for="slide13"></label>
-                <label for="slide14"></label>
-                <label for="slide15"></label>
+
+                <div class="navigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                </div>
+            </div>                        
+
+            <div class="pie">
+                <ul>
+                    <li><i class="fa fa-thumbs-up" aria-hidden="true"></i> 1.4k</li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i> 873</li>
+                    <li><i class="fa fa-comments" aria-hidden="true"></i> 66</li>
+                    <li><i class="fa fa-tags" aria-hidden="true"></i>
+                        <a href="./buscar.html">Aviones</a>
+                        <a href="">, soldados</a>
+                        <a href="">, tanques</a>
+                        <a href="">, historia</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
+
+    <section class="paginacion">
+        <ul>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="./buscar.html">2</a></li>
+            <li><a href="./nueva.html">3</a></li>
+            <li><a href="./favoritas.html">4</a></li>
+            <li><a href="./logout.html">5</a></li>
+            <li><a href="./login.html">6</a></li>
+            <li><a href="./registro.html">7</a></li>
+            <li><a href="./acerca.html">8</a></li>
+        </ul>
+    </section>
+
+    <a class='flotante' href="#arriba"> <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i></a>
+
+    <div class="footer">
+        <div class="contain">
+            <div class="col cont">
+                <h1>Contactos</h1>
+                <ul>
+                    <li><a href="./acerca.html"><i class="fa fa-child" aria-hidden="true"></i> Acerca de Nosotros</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/luis.sarmiento.330"><i class="fa fa-facebook-square"
+                                aria-hidden="true"></i> Facebook</a></li>
+                    <li><a href="https://www.youtube.com/c/ALLEN23"><i class="fa fa-youtube-play"
+                                aria-hidden="true"></i> YouTube</a></li>
+                    <li><a href="https://www.instagram.com/allen23yt"><i class="fa fa-instagram" aria-hidden="true"></i>
+                            Intagram</a></li>
+                </ul>
+            </div>
+            <div class="col dir">
+                <h1>Direccion</h1>
+                <ul>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Plateado, Loja-Ecuador</li>
+                    <li><i class="fa fa-mobile" aria-hidden="true"></i> +593-989 023 836</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> luis.a.sarmiento@unl.edu.ec</li>
+                </ul>
+            </div>
+            <div class="col der">
+                <h1>derechos</h1>
+                <ul>
+                    <li><i class="fa fa-copyright" aria-hidden="true"></i> Copyrigth: Todos los derechos reservados</li>
+                    <li><i class="fa fa-calendar" aria-hidden="true"></i> Creacion: <time datetime="2020-11-024">24 de
+                            noviembre de 2020</time></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </body>
 
-</html>
+
+
+<!-- <div id="controls">
+    <label for="sbutton1"></label>
+    <label for="sbutton2"></label>
+    <label for="sbutton3"></label>
+    <label for="sbutton4"></label>
+    <label for="sbutton5"></label>
+    <label for="sbutton6"></label>
+    <label for="sbutton7"></label>
+    <label for="sbutton8"></label>
+    <label for="sbutton9"></label>
+    <label for="sbutton10"></label>
+    <label for="sbutton11"></label>
+    <label for="sbutton12"></label>
+    <label for="sbutton13"></label>
+    <label for="sbutton14"></label>
+    <label for="sbutton15"></label>
+</div>
+<div id="bullets">
+    <label for="sbutton1"></label>
+    <label for="sbutton2"></label>
+    <label for="sbutton3"></label>
+    <label for="sbutton4"></label>
+    <label for="sbutton5"></label>
+    <label for="sbutton6"></label>
+    <label for="sbutton7"></label>
+    <label for="sbutton8"></label>
+    <label for="sbutton9"></label>
+    <label for="sbutton10"></label>
+    <label for="sbutton11"></label>
+    <label for="sbutton12"></label>
+    <label for="sbutton13"></label>
+    <label for="sbutton14"></label>
+    <label for="sbutton15"></label>
+</div> -->

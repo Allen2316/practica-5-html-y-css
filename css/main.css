@@ -1,13 +1,17 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(/imagenes/fondoOscuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 main {
     margin: 0;
     align-content: center;    
     min-height: 100vh;
 }
+
 
 /* Estilos para la cabecera */
 

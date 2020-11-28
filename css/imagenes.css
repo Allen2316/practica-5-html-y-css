@@ -5,36 +5,100 @@ h1 {
 main {
     margin: 0;
     align-content: center;
-    display: flex;
+    display: block;
     min-height: 100vh;
+    position: relative;
 }
 
-.autor{
-    float: right;;
-    outline: 2px solid red;
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 25px #10E02B;
+    font-size: 3em;
+}
+
+.contenedor-p {
+    width: 80%;
+    margin: 0 auto;    
+    background: rgba(126, 85, 85, 0.3);
+}
+
+.cabeza {
+    text-align: center;
+    margin-bottom: -40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 0 25px #7204A4;
+}
+
+.cabeza h3 {
+    margin-bottom: -12px;
+}
+
+.pie {
+    margin-top: 20px;    
+}
+
+.pie ul {
+    list-style: none;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pie ul li {
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.pie ul li i {
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: #000000;
+    padding: 5px;
+}
+
+.pie ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: 0 0 1 .2;
 }
 
 .slider {
     width: 60%;
-    height: 400px;    
-    margin:0 auto;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
     position: relative;
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    box-shadow: 20px 0 60px rgba(0, 0, 0, 0.987);   
+    text-align: center;
+    box-shadow: 20px 0 60px rgba(0, 0, 0, 0.987);
 }
 
 .slider img {
     position: absolute;
     top: 0;
     left: 0;
-    margin: auto;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
     width: 100%;
     height: 100%;
-    opacity: 0;    
+    opacity: 0;
+    border-radius: 4px;
+    
+}
+
+.slider img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);        
+    border-radius: 5px;    
+    cursor: pointer;    
 }
 
 .slider input[type="radio"] {
@@ -42,14 +106,14 @@ main {
 }
 
 .slider input[type="radio"]:checked~img {
-    opacity: 1;
+    opacity: 1;    
 }
 
 .slider input[type="radio"]+label {
     position: relative;
     z-index: 50;
-    margin:10px;
-    display: block;    
+    margin: 10px;
+    display: block;
     width: 20px;
     height: 20px;
     background-color: #000000;
@@ -58,25 +122,35 @@ main {
     cursor: pointer;
 }
 
-.slider input[type="radio"]:checked + label {    
+.slider input[type="radio"]:checked+label {
     background: #000000;
     border: 2px solid #ffffff;
 }
 
 @media only screen and (max-width: 626px) {
-    .slider input[type="radio"]+label {         
+    .slider input[type="radio"]+label {
         width: 50%;
-        height: 20px;        
-        transition: all 1s;
+        height: 20px;
     }
     .slider {
         width: 100%;
-        height: 400px;    
-         
+        height: 400px;
     }
 }
 
+@media only screen and (max-width: 830px) {
+    .slider input[type="radio"]+label {
+        margin-right: px;
+        width: 80%;
+        height: 20px;
+    }
+    .slider {
+        width: 100%;
+        height: 400px;
+    }
+}
 
+/*  */
 
 
 /* 
