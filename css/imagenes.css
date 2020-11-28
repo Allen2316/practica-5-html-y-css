@@ -197,8 +197,6 @@ h1 {
     display: block;
     outline: 5px solid green;
  }
-
-
  @media screen and (max-width: 900px) {
    #slide1:checked ~ #controls label:nth-child(2),
  #slide2:checked ~ #controls label:nth-child(3),
