@@ -1,0 +1,137 @@
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.desc{
+    background: none;    
+}
+
+body {
+    background: url(/imagenes/fondoOscuro.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* formulario */
+
+.formulario {
+    background-image: url(/imagenes/09.jpg);    
+    background-size: cover;        
+    padding: 3px;
+    margin: 0 auto;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;    
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 1px 1px #000000;
+    font-size: 40px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor:hover, input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover {
+    background: #ccffcc;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+textarea:hover {
+    background: #ccffcc;
+}
+
+.botones {
+    border: 0;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.botones input {
+    cursor: pointer;
+}
+
+.botones:hover {
+    background: none;
+}
+
+/* iconos */
+
+.icon {
+    margin-left: 5px;
+    padding: 10px;
+    text-align: center;
+    background: #000000;
+    border-radius:  50%;
+    color: #ffffff;
+}
+
+/* Botones */
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* hovers */
+
+.button:hover {
+    background: cadetblue;
+}
+
+.link:hover {
+    color: cadetblue;
+}
+
+/* mejoras est */
+
+p {
+    text-align: center;
+    color: #ffffff;
+    background: #000000;
+    padding: 4px;    
+}
+
+.link {
+    text-decoration: none;
+    color: #02AC66;
+    font-weight: 600;
+}
+
+/* medidas responsive */
+
+@media(min-width:768px) {
+    .formulario {
+        width: 900px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 2%;
+    }
+    input[type="text"], input[type="password"], input[type="email"] {
+        font-size: 20px;
+        width: 90%;
+        padding: 10px;
+        border: none;
+    }
+}
