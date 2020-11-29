@@ -6,12 +6,19 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* Estilos para el main */
+
 main {
     margin: 0;
-    align-content: center;    
+    align-content: center;
     min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 20px;
 }
-
 
 /* Estilos para la cabecera */
 
@@ -35,6 +42,12 @@ h4 {
     font-family: 'Dancing Script', cursive;
     color: #ffffff;
     text-shadow: 0 0 25px #10E02B;
+}
+
+.bienvido {
+    color: #ffffff;
+    text-shadow: 0 0 25px #10E02B;
+    font-size: 3em;
 }
 
 .cont-titulo {
@@ -134,16 +147,6 @@ h4 {
     #btn-menu:checked~.menu {
         margin: 0;
     }
-}
-
-/* Estilos para el cuerpo */
-
-main {
-    height: 100%;
-    width: 100%;
-    text-align: justify;
-    box-sizing: border-box;
-    padding: 20px;
 }
 
 /* Estilos para el footer */
@@ -267,7 +270,7 @@ main {
 
 /* Paginacion */
 
-.paginacion {    
+.paginacion {
     background: #024959;
     margin-top: -15px;
 }

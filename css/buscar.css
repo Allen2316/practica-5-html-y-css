@@ -17,21 +17,23 @@ body {
 
 .formulario {
     background-image: url(/imagenes/09.jpg);    
-    background-size: cover;        
-    padding: 3px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 75px;    
     margin: 0 auto;
 }
 
-.contenedor {
+.contenedor {    
     width: 100%;
     padding: 15px;
     box-sizing: border-box;    
 }
 
-h1 {
+.formulario h1 {
     text-align: center;
     color: #ffffff;
-    text-shadow: 4px 1px 1px #000000;
+    text-shadow: 0 0 25px #10E02B;
     font-size: 40px;
 }
 
@@ -106,12 +108,13 @@ textarea:hover {
 
 /* mejoras est */
 
-p {
+.contenedor p {
     text-align: center;
     color: #ffffff;
     background: #000000;
     padding: 4px;    
 }
+
 
 .link {
     text-decoration: none;
@@ -128,10 +131,17 @@ p {
         margin-bottom: 30px;
         border-radius: 2%;
     }
-    input[type="text"], input[type="password"], input[type="email"] {
+    input[type="text"]{
         font-size: 20px;
         width: 90%;
         padding: 10px;
         border: none;
     }
+}
+
+@media(max-width:767px) {
+    .formulario {
+        padding: 0;
+    }
+    
 }

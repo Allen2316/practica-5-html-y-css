@@ -10,15 +10,9 @@ main {
     position: relative;
 }
 
-h1 {
-    color: #ffffff;
-    text-shadow: 0 0 25px #10E02B;
-    font-size: 3em;
-}
-
 .contenedor-p {
     width: 80%;
-    margin: 0 auto;    
+    margin: 0 auto;
     background: rgba(126, 85, 85, 0.3);
 }
 
@@ -30,12 +24,24 @@ h1 {
     text-shadow: 0 0 25px #7204A4;
 }
 
+.cabeza a{
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 0 0 25px #7204A4;
+}
+
+.cabeza a:hover{
+    padding: 5px;
+    margin: 2px;
+    background: cadetblue;
+}
+
 .cabeza h3 {
     margin-bottom: -12px;
 }
 
 .pie {
-    margin-top: 20px;    
+    margin-top: 20px;
 }
 
 .pie ul {
@@ -44,7 +50,7 @@ h1 {
     color: #ffffff;
 }
 
-.pie ul li {
+.pie li {
     text-align: left;
     display: inline-block;
     padding: 10px;
@@ -52,18 +58,37 @@ h1 {
     font-size: 14px;
 }
 
-.pie ul li i {
+.pie i {
     color: #ffffff;
     border-radius: 20px;
     background-color: #000000;
     padding: 5px;
 }
 
-.pie ul li a {
+.pie i:hover {
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pie a {
     text-decoration: none;
     color: #ffffff;
+    text-shadow: 0 0 5px #10E02B;
     background-color: 0 0 1 .2;
 }
+
+.pie a:hover {
+    background: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pie i[title]  {
+    display:inline;    
+  }
 
 .slider {
     width: 60%;
@@ -91,14 +116,13 @@ h1 {
     height: 100%;
     opacity: 0;
     border-radius: 4px;
-    
 }
 
-.slider img:hover{
+.slider img:hover {
     transform: scale(1.1);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);        
-    border-radius: 5px;    
-    cursor: pointer;    
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .slider input[type="radio"] {
@@ -106,7 +130,7 @@ h1 {
 }
 
 .slider input[type="radio"]:checked~img {
-    opacity: 1;    
+    opacity: 1;
 }
 
 .slider input[type="radio"]+label {
@@ -151,7 +175,6 @@ h1 {
 }
 
 /*  */
-
 
 /* 
 #sbutton1:checked  ~  label:nth-child(2),
