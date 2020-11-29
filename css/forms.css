@@ -56,7 +56,6 @@ input[type="text"], input[type="password"], input[type="email"] {
     border: 1px solid #aaa;
 }
 
-
 /* text area */
 
 textarea {
@@ -86,6 +85,10 @@ textarea:hover {
     width: 100%;
     display: block;
     margin: 0 auto;
+}
+
+.imagen img[title]{
+    display: inline;
 }
 
 .botones {
