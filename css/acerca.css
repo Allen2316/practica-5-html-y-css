@@ -5,18 +5,20 @@ body {
 
 main {
     padding: 20px;
+    height: 100%;    
+    display: inline-block;
 }
 
 .imagen {
     width: 250px;
     margin-left: 30px;
     padding: 0%;
-    float: left;  
+    float: left;
     margin: 20px 100px 30px 30px;
     text-align: center;
     color: #333;
     font-size: 18px;
-    box-shadow: 10px 3px 6px rgba(0, 100, 100, .25);    
+    box-shadow: 10px 3px 6px rgba(0, 100, 100, .25);
     transform: rotate(3deg);
     border-radius: 5px;
 }
@@ -40,7 +42,190 @@ main {
     text-align: justify;
 }
 
-#nick{
+#nick {
     text-align: justify;
     font-weight: bold;
 }
+
+/* Para foto.html */
+
+.imagenFoto {
+    width: 30%;
+    margin-left: 30px;
+    padding: 0%;
+    float: left;
+    margin: 20px 100px 30px 30px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 10px 3px 6px rgba(0, 100, 100, .25);
+    border-radius: 5px;    
+}
+
+.imagenFoto:hover {
+    transform: scale(1.25);
+    margin-left: 80px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+    position: relative;
+    border-radius: 5px;
+}
+
+.imagenFoto[title] {
+    display: inline;
+}
+
+.datosFoto {
+    display: inline-block;
+    width: 50%;
+}
+
+.datosFoto h2 {
+    text-align: center;
+    text-shadow: 0 0 25px #7204A4;
+    margin-bottom: -0.1%;
+}
+
+.datosFoto ul {
+    width: 30% 100%;
+    display: inline-block;
+    background: rgba(126, 85, 85, 0.3);
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.datosFoto li {
+    display: inline-block;
+    font-weight: bold;
+    text-align: justify;
+    list-style: none;
+    border: 2px inset #ffffff;
+    border-radius: 5px;
+    padding: 0 5px;
+    margin-bottom: 5px;
+    text-shadow: 0 0 5px #10E02B;
+}
+
+.datosFoto li p {
+    font-weight: normal;
+    text-shadow: 0 0 5px #29D0FD;
+}
+
+.datosFoto li p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.datosFoto li p a:hover {
+    font-size: 115%;
+    padding: 2px;
+    border-radius: 5px;
+    background: rgba(17, 15, 15, 0.5);
+}
+
+.datosFoto .eti {
+    display: flex;
+}
+
+.datosFoto .eti a {
+    padding-right: 5px;
+}
+
+.datosFoto .eti li:hover {
+    font-size: 105%;
+    padding: 2px;
+    border-radius: 5px;    
+    background: rgba(17, 15, 15, 0.5);
+}
+
+.comentarios {
+    display: block;
+    margin-bottom: 40px;
+}
+
+.pri {
+    margin-bottom: 10px;
+    display: inline-table;
+    width: 50%;
+    border-radius: 5px;
+    color: #000000;    
+}
+
+.pri img {
+    float: left;
+    margin-bottom: 10px;
+    height: 80px;
+    width: 80px;
+    margin-right: 1%;
+    border-radius: 50px;        
+}
+
+.pri div {
+    padding: 0 10px;
+    background: #ffffff;
+    border: 4px double #000000;    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 70%;
+    float: left;
+    display: inline;    
+}
+
+.pri .nom {
+    text-shadow: none;
+    font-family: sans-serif;
+    margin: 0;
+    color: #000000;
+    padding: 0;
+}
+
+.pri .tit-fech {
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+/*  */
+
+.seg {
+    display: inline-table;
+    width: 50%;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.seg img {
+    margin-bottom: 10px;
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin-right: 1%;
+    border-radius: 50px;        
+}
+
+.seg div {
+    padding: 0 10px;
+    background: #ffffff;
+    border: 4px double #000000;    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 70%;
+    float: left;
+    display: inline;    
+}
+
+.seg .nom {
+    text-shadow: none;
+    font-family: sans-serif;
+    margin: 0;
+    color: #000000;
+    padding: 0;
+}
+
+.seg .tit-fech {
+    margin-top: 0;
+    margin-bottom: -10px;
+}
+
+
+
